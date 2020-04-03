@@ -342,6 +342,23 @@ public struct ViewImageConfig {
     size: .init(width: 3840, height: 2160),
     traits: .init()
   )
+   
+//  public static let iPhoneTVA = ViewImageConfig.iPhoneTVA//.iPhoneSe(.portrait)
+//
+//  public static func iPhoneTVF(_ orientation: Orientation) -> ViewImageConfig {
+//    let safeArea: UIEdgeInsets
+//    let size: CGSize
+//    switch orientation {
+//    case .landscape:
+//      safeArea = .zero
+//      size = .init(width: 568, height: 320)
+//    case .portrait:
+//      safeArea = .init(top: 20, left: 0, bottom: 0, right: 0)
+//      size = .init(width: 320, height: 568)
+//    }
+//    return .init(safeArea: safeArea, size: size, traits: .iPhoneSe(orientation))
+//  }
+
   #endif
 }
 

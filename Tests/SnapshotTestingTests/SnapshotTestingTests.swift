@@ -469,6 +469,7 @@ final class SnapshotTestingTests: XCTestCase {
         matching: viewController, as: .image(on: .iPadPro11(.portrait)), named: "ipad-pro-11-alternative")
       assertSnapshot(
         matching: viewController, as: .image(on: .iPadPro12_9(.portrait)), named: "ipad-pro-12-9-alternative")
+      assertSnapshot(matching: viewController, as: .image(on: ViewImageConfig.iPhoneXsMax), named: "ipad-pro-12-9-alternativeyo")
 
       allContentSizes.forEach { name, contentSize in
           assertSnapshot(
@@ -480,6 +481,8 @@ final class SnapshotTestingTests: XCTestCase {
       #elseif os(tvOS)
       assertSnapshot(
         matching: viewController, as: .image(on: .tv), named: "tv")
+      assertSnapshot(
+        matching: viewController, as: .image(on: .tv4K), named: "tv4K")
       #endif
     }
     #endif
